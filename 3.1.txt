@@ -1,0 +1,20 @@
+Module Module1
+    Sub Main()
+        fechactual()
+        horactual()
+        Console.ReadKey()
+
+    End Sub
+
+    Private Sub fechactual()
+        Dim fecha As Date = Today
+        Console.WriteLine("Fecha: " & fecha)
+    End Sub
+
+    Private Function horactual()
+        Dim hora As Date = TimeString
+        Console.WriteLine("Hora: " & hora)
+
+    End Function
+
+End Module

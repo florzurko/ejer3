@@ -1,0 +1,22 @@
+Module Module1
+    'Mostrar las 5 primeras potencias de un valor numérico ingresado 
+    'por teclado del mismo. Implementar una función que retornará una 
+    'potencia cada vez que se invoque, la primera vez el
+    'exponente será 2, la segunda vez 3 y así sucesivamente
+
+    ' 
+    Sub Main()
+        Dim numero As Single
+        Dim potencia As Byte
+        Console.WriteLine("Ingresar un numero: ")
+        numero = Console.ReadLine
+        Console.WriteLine(numero & " elevado a la 1 = " & Math.Pow(numero, 1), numero)
+        Console.WriteLine(numero & " elevado a la 2 = " & Math.Pow(numero, 2), numero)
+        Console.WriteLine(numero & " elevado a la 3 = " & Math.Pow(numero, 3), numero)
+        Console.WriteLine(numero & " elevado a la 4 = " & Math.Pow(numero, 4), numero)
+        Console.WriteLine(numero & " elevado a la 5 = " & Math.Pow(numero, 5), numero)
+        Console.ReadKey()
+
+
+    End Sub
+End Module

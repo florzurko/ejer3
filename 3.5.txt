@@ -1,0 +1,31 @@
+Module Module1
+    Friend a As Double
+    Sub Main()
+        Dim base As Double
+        Dim altura As Double
+
+        Do
+            Console.WriteLine(" Ingrese el radio de la base :")
+            base = Console.ReadLine()
+            Console.WriteLine(" ingrese la altura: ")
+            altura = Console.ReadLine()
+
+
+        Loop While base < 0 Or altura < 0
+
+        Console.WriteLine(Volumen(base, altura))
+        Console.ReadKey()
+
+    End Sub
+
+    Function Volumen(ByVal base As Double, altura As Double) As Double
+
+        a = (Math.PI) * (base * base) * altura
+        Return a
+    End Function
+    
+
+
+
+
+End Module

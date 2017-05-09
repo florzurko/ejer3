@@ -1,0 +1,31 @@
+Module Module1
+    '3.2. Crear una función que reciba una fecha y 
+    'un entero que representa una cantidad de días a
+    'sumar a la fecha. Desde el módulo principal ingresar 
+    'una fecha y la cantidad de días e invocar a esta
+    'función pasándole los parámetros: fecha actual y
+    'días, mostrar el valor obtenido
+    Sub Main()
+
+        Dim fechainicial, numero As String
+        Dim dias As Double
+        Dim fechafinal As Date
+        Dim diasumar As DateInterval
+        diasumar = DateInterval.Day
+
+        Console.WriteLine("Ingresar una fecha: ")
+        fechainicial = Console.ReadLine
+        fechafinal = CDate(fechainicial)
+        Console.WriteLine("Ingresar un numero que represente los dias a sumar: ")
+        numero = Console.ReadLine
+        dias = Val(numero)
+        Console.WriteLine("Nueva fecha: " & DateAdd(diasumar, dias, fechafinal))
+        Console.ReadKey()
+
+
+
+
+
+    End Sub
+
+End Module

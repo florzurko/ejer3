@@ -1,0 +1,23 @@
+Module Module1
+    Friend hipc As Double
+    Sub Main()
+        Dim ladoa As Double
+        Dim ladob As Double
+
+        Console.WriteLine(" Ingrese lado A :")
+        ladoa = Console.ReadLine()
+        Console.WriteLine(" Ingrese lado B: ")
+        ladob = Console.ReadLine()
+
+        Console.WriteLine(Hipotenusa(ladoa, ladob))
+        Console.ReadKey()
+
+    End Sub
+
+    Function Hipotenusa(ByVal ladoa As Double, ladob As Double) As Double
+
+        c = Math.Sqrt(ladoa * ladoa + ladob * ladob)
+        Return hipc
+    End Function
+
+End Module
