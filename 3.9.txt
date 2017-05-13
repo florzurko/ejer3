@@ -1,0 +1,51 @@
+Module Module1
+    Friend a As Double
+
+    Sub Main()
+        Dim opcion As Byte
+        Dim lado As Double
+        Dim base As Double
+        Dim altura As Double
+        Dim paralela As Double
+        Dim paralelob As Double
+        Dim paraaltura As Double
+        Console.WriteLine("- Cuadrado =1 ; Rectangulo = 2 ; Trapecio = 3 ")
+        Console.WriteLine("Ingrese la superficie que desea calcular: ")
+        opcion = Console.ReadLine
+        If opcion = 1 Then
+            Console.WriteLine("Ingrese el valor de lado: ")
+            lado = Console.ReadLine
+            Console.WriteLine("El resultado es: " & (area(lado)))
+        End If
+        If opcion = 2 Then
+            Console.WriteLine("Ingrese el valor de la base: ")
+            base = Console.ReadLine
+            Console.WriteLine("Ingrese el valor de la altura: ")
+            altura = Console.ReadLine
+            Console.WriteLine(area(base, altura))
+        End If
+        If opcion = 3 Then
+            Console.WriteLine("Ingrese el valor del paralelo a: ")
+            paralela = Console.ReadLine
+            Console.WriteLine("Ingrese el valor del paralelo b: ")
+            paralelob = Console.ReadLine
+            Console.WriteLine("Ingrese el valor de la altura: ")
+            paraaltura = Console.ReadLine
+            Console.WriteLine(area(paralela, paralelob, paraaltura))
+
+        End If
+        Console.ReadKey()
+    End Sub
+    Function area(ByVal lado As Double) As Double
+        a = (lado * lado)
+        Return a
+    End Function
+    Function area(ByVal base As Double, ByVal altura As Double) As Double
+        a = (base * altura)
+        Return a
+    End Function
+    Function area(paralela As Double, paralelob As Double, paraaltura As Double) As Double
+        a = (((paralela + paralelob) / 2) * paraaltura)
+        Return a
+    End Function
+End Module
